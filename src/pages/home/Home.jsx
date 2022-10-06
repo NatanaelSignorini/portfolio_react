@@ -1,10 +1,10 @@
 import React from 'react'
-import './header.css'
-import CTA from './Butons'
+import './home.css'
+import CTA from '../../components/homebuton/Butons'
 import image from '../../assets/me2.png'
-import HeaderSocials from './HeaderSocials'
+import HeaderSocials from './HomeSocials'
 
-const Header = () => {
+const Home = () => {
   return (
     <header>
       <section id='home' className='container header__container'>
@@ -25,4 +25,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Home

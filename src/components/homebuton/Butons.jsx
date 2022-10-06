@@ -1,6 +1,11 @@
 import React from 'react'
+import './butons.css'
 import CV from'../../assets/cv.pdf'
-const butons = () => {
+
+
+
+
+const Butons = () => {
   return (
     <div className='butons'>
       <a href={CV} download className='btn'>Download CV</a>
@@ -9,4 +14,4 @@ const butons = () => {
   )
 }
 
-export default butons
+export default Butons
