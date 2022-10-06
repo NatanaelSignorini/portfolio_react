@@ -5,9 +5,10 @@ import {
   AiOutlineHome, 
   AiOutlineUser,
   AiOutlineBook,
-  AiOutlineMessage
+  AiOutlineMessage,
+  AiOutlineProject
 } from 'react-icons/ai'
-import {RiServiceLine} from 'react-icons/ri'
+
 
 
 const Nav = () => {
@@ -21,7 +22,7 @@ const Nav = () => {
       <a href='#experience' onClick={() => setActiveNav('#experience')} 
       className={activeNav === '#experience' ? 'active' : ''}> <AiOutlineBook/> </a>
       <a href='#portfolio' onClick={() => setActiveNav('#portfolio')} 
-      className={activeNav === '#services' ? 'active' : ''}> <RiServiceLine/> </a>
+      className={activeNav === '#portfolio' ? 'active' : ''}> <AiOutlineProject/> </a>
       <a href='#contact' onClick={() => setActiveNav('#contact')} 
       className={activeNav === '#contact' ? 'active' : ''}> <AiOutlineMessage/> </a>
     </nav>
