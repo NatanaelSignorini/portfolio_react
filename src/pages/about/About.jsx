@@ -1,22 +1,12 @@
 import React from 'react'
-import { useState, useEffect } from "react"
-import axios from 'axios'
 import './about.css'
+import image from '../../assets/avatar-blank.png'
 import {FaAward} from 'react-icons/fa'
 import {FiUsers} from 'react-icons/fi'
 import {VscFolderLibrary} from 'react-icons/vsc'
 
 const About = () => {
-  const [user, setUser] = useState(null);
-  const gitUserName='natanaelsignorini'
-
-  useEffect(() => {
-    axios.get('https://api.github.com/users/'+gitUserName)
-    .then(response => {
-      setUser(response.data)
-    })
-  }, [])
-
+  
   return (
     <section id='about'>
        <h5>Get To Know</h5>
@@ -26,7 +16,7 @@ const About = () => {
        
         <div className="about__me">
           <div className="about__me-image">
-            <img src={user?.avatar_url} alt="About_Image"></img> 
+            <img src={image} alt="About_Image"></img> 
           </div> 
         </div>
 

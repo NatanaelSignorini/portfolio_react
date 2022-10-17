@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from "react"
 import axios from 'axios'
+import image from '../../assets/avatar-blank.png'
 import './portfolio.css'
 
 
@@ -29,7 +30,7 @@ const Portfolio = () => {
             return (
               <article key={repo.id} className='portfolio__item'>
                 <div className="portfolio__item-image">
-                  <img src={repo.avatar_url} alt={repo.name}></img>
+                  <img src={image} alt={repo.name}></img>
                 </div>
                 <h3>{repo.description}</h3>
                 <div className="portfolio__item-button">
