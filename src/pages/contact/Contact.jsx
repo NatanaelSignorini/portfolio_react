@@ -2,12 +2,12 @@ import React, {useRef} from 'react'
 import './contact.css'
 import emailjs from 'emailjs-com';
 
-import {MdOutlineMail} from 'react-icons/md'
+//import {MdOutlineMail} from 'react-icons/md'
 import {BsWhatsapp} from 'react-icons/bs'
 
 const numberPhone = '5553984363504'
 const whatsappLink = "https://api.whatsapp.com/send?phone="+numberPhone
-const emailLink = "mailto:dummyegator@gmail.com"
+//const emailLink = "mailto:dummyegator@gmail.com"
 
 const YOUR_SERVICE_ID =''
 const YOUR_TEMPLATE_ID =''
@@ -32,12 +32,12 @@ const Contact = () => {
 
       <div className="container contact__container">
         <div className="contact__options">
-          <article className="contact__option">
+          {/* <article className="contact__option">
             <MdOutlineMail className="contact__option-icon"/>
             <h4>Email</h4>
             <h5>dummyegator@gmail.com</h5>
             <a href={emailLink} target="#blank"> Send a message</a>
-          </article>
+          </article> */}
 
           <article className="contact__option">
             <BsWhatsapp className="contact__option-icon"/>
