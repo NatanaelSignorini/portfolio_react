@@ -9,17 +9,13 @@ const numberPhone = '5553984363504'
 const whatsappLink = "https://api.whatsapp.com/send?phone="+numberPhone
 //const emailLink = "mailto:dummyegator@gmail.com"
 
-const YOUR_SERVICE_ID =''
-const YOUR_TEMPLATE_ID =''
-const YOUR_PUBLIC_KEY =''
-
 const Contact = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm({YOUR_SERVICE_ID}, {YOUR_TEMPLATE_ID}, form.current, {YOUR_PUBLIC_KEY})
+    emailjs.sendForm('service_rut7g52', 'template_4d9l0mc', form.current, 'zXv6wTwWzVlJjtULv')
     e.target.reset()
   };
 
